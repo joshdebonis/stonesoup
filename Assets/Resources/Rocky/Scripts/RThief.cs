@@ -3,6 +3,7 @@ using UnityEngine;
 public class RThief : BasicAICreature
 {
     Tile runningFromTile;
+    float timeSinceStolen;
     public override void FixedUpdate()
     {
         if(tileWereHolding==null)
@@ -42,6 +43,10 @@ public class RThief : BasicAICreature
                 }
             }
         }
+        if (timeSinceStolen > 3 && tileWereHolding!=null) {
+            tileWereHolding.useAsItem(this);
+            timeSinceStolen=Time.time+Random.Range(-1f,1f);
+        }
     }
     public override void tileDetected(Tile detectedTile)
     {
@@ -65,6 +70,7 @@ public class RThief : BasicAICreature
                 if (tile.tileWereHolding == null) {
                     stolenTile.pickUp(this);
                     runningFromTile=tile;
+                    timeSinceStolen=Time.time+Random.Range(-1f,1f);
                 }
             }
         }
