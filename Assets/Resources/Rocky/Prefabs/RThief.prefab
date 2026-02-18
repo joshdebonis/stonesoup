@@ -244,6 +244,6 @@ MonoBehaviour:
   heldAngle: 0
   tileWereHolding: {fileID: 0}
   aimDirection: {x: 0, y: 0}
-  moveSpeed: 5
+  moveSpeed: 6
   moveAcceleration: 100
   tagsWeChase: 32
