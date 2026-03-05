@@ -7,6 +7,7 @@ public class RCaveRoom : Room
     public int expandRadius = 1;
     public int thiefCount = 2, thiefIndex;
     public int shieldCount = 2, shieldIndex;
+    public int botIndex;
     public override void fillRoom(LevelGenerator ourGenerator, ExitConstraint requiredExits) {
         requiredExits.addDirConstraint((Dir)UnityEngine.Random.Range(0, 4));
         if(UnityEngine.Random.Range(0f,1f)<0.5f){
@@ -115,13 +116,15 @@ public class RCaveRoom : Room
         // spawn thieves and shields
         AssignRandomCells(ref indexGrid, thiefCount, thiefIndex);
         AssignRandomCells(ref indexGrid, shieldCount, shieldIndex);
+        AssignRandomCells(ref indexGrid, 1, botIndex, false);
 
         ClearExitPaths(ref indexGrid, requiredExits);
     }
 
-    void AssignRandomCells(ref int[,] grid, int spawnCount, int spawnValue)
+    void AssignRandomCells(ref int[,] grid, int spawnCount, int spawnValue, bool random=true)
     {
-        spawnCount+=UnityEngine.Random.Range(-1,1);
+        if(random)
+            spawnCount+=UnityEngine.Random.Range(-1,1);
         int m = grid.GetLength(0);
         int n = grid.GetLength(1);
 

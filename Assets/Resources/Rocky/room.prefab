@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4561350303700290}
-  - component: {fileID: -3276931371465061116}
+  - component: {fileID: 6555571880364580818}
   m_Layer: 0
   m_Name: room
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3276931371465061116
+--- !u!114 &6555571880364580818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,18 +41,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896788399910994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d115780498e57ad469ebcdfab1ce3b67, type: 3}
+  m_Script: {fileID: 11500000, guid: 88b47a4e3fd8b1c47b02fb5d602ddf9c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RCaveRoom
+  m_EditorClassIdentifier: Assembly-CSharp::RRandRoom
   roomAuthor: Rocky
-  designedRoomFile: {fileID: 4900000, guid: 62e6651eeaa61524281ae81d05c31398, type: 3}
+  designedRoomFile: {fileID: 0}
   localTilePrefabs:
   - {fileID: 1614338125090674, guid: 8621601623923bd43b92a994458ca835, type: 3}
   - {fileID: 1781302445510578, guid: 0583362832193a944a86e0c38ba2c54a, type: 3}
+  - {fileID: 1614338125090674, guid: e2a4323992f943245aed81ae02451694, type: 3}
+  - {fileID: 1614338125090674, guid: 426640e6c81b3fb4aa08bd79885ba5ef, type: 3}
+  - {fileID: 1614338125090674, guid: 1637a4a3b18becd43b2de50513b85a9f, type: 3}
   roomGridX: 0
   roomGridY: 0
-  expandRadius: 1
-  thiefCount: 1
-  thiefIndex: 5
-  shieldCount: 1
-  shieldIndex: 4
+  designedRoomFiles:
+  - {fileID: 4900000, guid: 9c93b63a575d1844984dd2a7c51a0c16, type: 3}
+  - {fileID: 4900000, guid: 2a1aba5d431527b4bb88c72dc0a2a9b0, type: 3}
+  - {fileID: 4900000, guid: e0594a7c60254fc4cb60e62ae4f5bdf0, type: 3}
