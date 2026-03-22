@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1896788399910994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4561350303700290}
+  - component: {fileID: 2877684927757811743}
+  m_Layer: 0
+  m_Name: room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4561350303700290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896788399910994}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2877684927757811743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896788399910994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6f4293ee61b40a9a1cff3a629c94d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomTest
+  roomAuthor: Lam
+  designedRoomFile: {fileID: 4900000, guid: e598b076285d24233be0fc92d1f8660f, type: 3}
+  localTilePrefabs:
+  - {fileID: 6922947325829231236, guid: 9f7232b3c100447c89a00949948d38d5, type: 3}
+  - {fileID: 1097009321995878, guid: 7f119146519d742d7953341b07580643, type: 3}
+  - {fileID: 2807926974723293224, guid: 46c6b6924928a42d4bc5e3812a2935e7, type: 3}
+  - {fileID: 1035861895254804519, guid: 37fee780125954e4d86e4368af663ecb, type: 3}
+  - {fileID: 1249101369981090, guid: ad909242602e14ab893ee3381803cc01, type: 3}
+  - {fileID: 5774948275950789564, guid: 905feee2ea8024f21aae5b7dab5d2705, type: 3}
+  - {fileID: 8328519508635709369, guid: 69e80e3cac0b54c52978779b2fd31cd5, type: 3}
+  - {fileID: 1806254560212812767, guid: 2bd9883781de9401a81e45c8564ab43a, type: 3}
+  roomGridX: 0
+  roomGridY: 0
+  Probabilities:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0.515
+  - 0
+  - 0
+  - 0.2
+  - 0.522
+  - 0.664
+  - 0.631
