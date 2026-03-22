@@ -62,6 +62,7 @@ public class AudioManager {
 
 	public bool instancePlayAudio(AudioClip audio) {
 		foreach (AudioSource maybeSource in _audioSources) {
+			if(maybeSource==null) continue;
 			if (!maybeSource.isPlaying) {
 				maybeSource.clip = audio;
 				maybeSource.Play();
